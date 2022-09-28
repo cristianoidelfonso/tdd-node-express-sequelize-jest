@@ -16,12 +16,12 @@ class SessionController {
       return res.status(401).json({ message: 'Incorrect password' });
     }
 
-    return res.status(200).json({ message: 'Teste'});
+    // return res.status(200).json({ message: 'Teste'});
 
-    // return res.json({
-    //   user,
-    //   token: user.generateToken()
-    // });
+    return res.json({
+      user,
+      token: user.generateToken()
+    });
   }
 }
 
